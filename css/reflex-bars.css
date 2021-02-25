@@ -1,0 +1,4 @@
+.reflex-bars {
+    display: block;
+    -webkit-box-reflect: below 0.25em -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, transparent), to(rgba(255, 255, 255, 0.7)));
+}
