@@ -1,0 +1,261 @@
+.cassette {
+    width: 495px;
+    height: 316px;
+    border: 4px solid #000000b9;
+    border-radius: 14px;
+    background: repeating-linear-gradient( #1a1a1a 31px, #1a1a1a 40px, #2b2b2b 10px, #2b2b2b 41px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 3px 10px;
+}
+
+.cassette-reels {
+    width: 80%;
+    height: 41%;
+    background-color: #252525;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: -18px auto 0 auto;
+}
+
+.filament {
+    width: 205px;
+    height: 205px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: repeating-radial-gradient(#000000 0 1px, #1f1f1f 1px 2px);
+    position: absolute;
+}
+
+.filament.L {
+    left: 10px;
+    transform: scale(.6);
+}
+
+.filament.R {
+    right: 10px;
+}
+
+.reel {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 10px #a0a0a0;
+    position: absolute;
+}
+
+.reel.L {
+    left: 50px;
+}
+
+.reel.R {
+    right: 50px;
+}
+
+.reel-lv1 {
+    width: 67%;
+    height: 67%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 12px #a0a0a0;
+}
+
+.cresta-lv1 {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #a0a0a0;
+    position: absolute;
+}
+
+.cresta-lv2 {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #a0a0a0;
+    position: absolute;
+}
+
+.cresta-lv1:nth-of-type(1) {
+    margin: -90px 0 0 0;
+}
+
+.cresta-lv1:nth-of-type(4) {
+    margin: 90px 0 0 0;
+}
+
+.cresta-lv1:nth-of-type(2) {
+    margin: -40px 0 0 80px;
+    transform: rotate(65deg);
+}
+
+.cresta-lv1:nth-of-type(6) {
+    margin: -40px 0 0 -80px;
+    transform: rotate(27deg);
+}
+
+.cresta-lv1:nth-of-type(3) {
+    margin: 40px 0 0 80px;
+    transform: rotate(27deg);
+}
+
+.cresta-lv1:nth-of-type(5) {
+    margin: 40px 0 0 -80px;
+    transform: rotate(65deg);
+}
+
+.cresta-lv2:nth-of-type(1) {
+    margin: -51px 0 0 0;
+}
+
+.cresta-lv2:nth-of-type(4) {
+    margin: 51px 0 0 0;
+}
+
+.cresta-lv2:nth-of-type(2) {
+    margin: -21px 0 0 46px;
+    transform: rotate(65deg);
+}
+
+.cresta-lv2:nth-of-type(6) {
+    margin: -21px 0 0 -46px;
+    transform: rotate(27deg);
+}
+
+.cresta-lv2:nth-of-type(3) {
+    margin: 22px 0 0 46px;
+    transform: rotate(27deg);
+}
+
+.cresta-lv2:nth-of-type(5) {
+    margin: 22px 0 0 -46px;
+    transform: rotate(65deg);
+}
+
+.screw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background: #555555;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    color: #000000;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.screw::before {
+    content: '\f067';
+}
+
+.screw:nth-child(1), .screw:nth-child(2) {
+    top: 4px
+}
+
+.screw:nth-child(3), .screw:nth-child(4) {
+    bottom: 6px
+}
+
+.screw:nth-child(1), .screw:nth-child(3) {
+    left: 7px
+}
+
+.screw:nth-child(2), .screw:nth-child(4) {
+    right: 7px
+}
+
+.screw:nth-child(5) {
+    top: 18px;
+    right: 156px;
+}
+
+.label-tape {
+    width: 99%;
+    height: 78%;
+    margin: -60px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    /* clip-path: polygon(0 100%, 100% 100%, 100% 13%, 93% 0, 7% 0, 0 13%); */
+    clip-path: polygon(0 100%, 100% 100%, 100% 13%, 93% 0, 85% 0%, 85% 79%, 15% 79%, 15% 38%, 85% 38%, 85% 0, 7% 0, 0 12%);
+    background: linear-gradient( to bottom, #ffffff 0%, #ffffff 47%, #ff5e13 47%, #ff5e13 48%, #ffffff 48%, #ffffff 55%, #ff5e13 55%, #ff5e13 57%, #ffffff 57%, #ffffff 62%, #ff5e13 62%, #ff5e13 64%, #ffffff 64%, #ffffff 69%, #ff5e13 69%, #ff5e13 74%, #ffffff 74%, #ffffff 77%, #ff5e13 77%, #ff5e13 82%, #ffffff 82%, #ffffff 85%, #ff5e13 85%, #ff5e13 93%, #ffffff 93%, #ffffff 100%);
+}
+
+.label-title {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 50px;
+    margin: -120px 0 0 0;
+}
+
+.cassette-bottom {
+    width: 324px;
+    height: 74px;
+    margin: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: 4;
+}
+
+.cassette-bottom:before {
+    content: '';
+    position: absolute;
+    box-shadow: 0 -4px 0 4px #7b7b7b;
+    width: 100%;
+    height: 100%;
+    transform: perspective(250px) rotateX(20deg);
+    background: repeating-linear-gradient( #1a1a1a 31px, #1a1a1a 40px, #2b2b2b 10px, #2b2b2b 41px);
+    border-radius: 10px 10px 3px 3px;
+    top: 11px;
+}
+
+.orifice-square, .orifice-circle {
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: inset 0 0 0px 2px #2b2b2b;
+    width: 19px;
+    height: 19px;
+}
+
+.orifice-square {
+    top: 48px;
+    border-radius: 2px;
+}
+
+.orifice-square.L {
+    left: 90px;
+}
+
+.orifice-square.R {
+    right: 80px;
+}
+
+.orifice-circle {
+    top: 55px;
+    border-radius: 50%;
+}
+
+.orifice-circle.L {
+    left: 42px;
+}
+
+.orifice-circle.R {
+    right: 32px;
+}
