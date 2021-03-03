@@ -8,3 +8,8 @@
     justify-content: space-around;
     align-items: center;
 }
+.footer a{
+    color: #ffffff;
+    font-weight: bolder;
+    text-decoration: none;
+}
