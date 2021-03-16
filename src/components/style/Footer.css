@@ -1,4 +1,4 @@
-.footer {
+.Footer {
     /* border: 1px solid green; */
     background-color: #1b2127;
     width: 100%;
@@ -8,7 +8,8 @@
     justify-content: space-around;
     align-items: center;
 }
-.footer a{
+
+.Footer__link {
     color: #ffffff;
     font-weight: bolder;
     text-decoration: none;

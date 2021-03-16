@@ -1,4 +1,14 @@
-.cassette {
+.Cassette__container {
+    /* border: 1px solid red; */
+    /* background-color: red; */
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cassette {
     width: 495px;
     height: 316px;
     border: 4px solid #000000b9;
@@ -11,7 +21,7 @@
     padding: 3px 10px;
 }
 
-.cassette-reels {
+.Cassette__reels {
     width: 80%;
     height: 41%;
     background-color: #252525;
@@ -23,7 +33,7 @@
     margin: -18px auto 0 auto;
 }
 
-.filament {
+.Cassette__filament {
     width: 205px;
     height: 205px;
     border-radius: 50%;
@@ -34,16 +44,16 @@
     position: absolute;
 }
 
-.filament.L {
+.Cassette__filament.L {
     left: 10px;
     transform: scale(.6);
 }
 
-.filament.R {
+.Cassette__filament.R {
     right: 10px;
 }
 
-.reel {
+.Cassette__reel {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -54,15 +64,15 @@
     position: absolute;
 }
 
-.reel.L {
+.Cassette__reel.L {
     left: 50px;
 }
 
-.reel.R {
+.Cassette__reel.R {
     right: 50px;
 }
 
-.reel-lv1 {
+.Cassette__reel-lv1 {
     width: 67%;
     height: 67%;
     border-radius: 50%;
@@ -72,7 +82,7 @@
     box-shadow: inset 0 0 0 12px #a0a0a0;
 }
 
-.cresta-lv1 {
+.Cassette__cresta-lv1 {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -80,7 +90,7 @@
     position: absolute;
 }
 
-.cresta-lv2 {
+.Cassette__cresta-lv2 {
     display: inline-block;
     width: 8px;
     height: 8px;
@@ -88,63 +98,63 @@
     position: absolute;
 }
 
-.cresta-lv1:nth-of-type(1) {
+.Cassette__cresta-lv1:nth-of-type(1) {
     margin: -90px 0 0 0;
 }
 
-.cresta-lv1:nth-of-type(4) {
+.Cassette__cresta-lv1:nth-of-type(4) {
     margin: 90px 0 0 0;
 }
 
-.cresta-lv1:nth-of-type(2) {
+.Cassette__cresta-lv1:nth-of-type(2) {
     margin: -40px 0 0 80px;
     transform: rotate(65deg);
 }
 
-.cresta-lv1:nth-of-type(6) {
+.Cassette__cresta-lv1:nth-of-type(6) {
     margin: -40px 0 0 -80px;
     transform: rotate(27deg);
 }
 
-.cresta-lv1:nth-of-type(3) {
+.Cassette__cresta-lv1:nth-of-type(3) {
     margin: 40px 0 0 80px;
     transform: rotate(27deg);
 }
 
-.cresta-lv1:nth-of-type(5) {
+.Cassette__cresta-lv1:nth-of-type(5) {
     margin: 40px 0 0 -80px;
     transform: rotate(65deg);
 }
 
-.cresta-lv2:nth-of-type(1) {
+.Cassette__cresta-lv2:nth-of-type(1) {
     margin: -51px 0 0 0;
 }
 
-.cresta-lv2:nth-of-type(4) {
+.Cassette__cresta-lv2:nth-of-type(4) {
     margin: 51px 0 0 0;
 }
 
-.cresta-lv2:nth-of-type(2) {
+.Cassette__cresta-lv2:nth-of-type(2) {
     margin: -21px 0 0 46px;
     transform: rotate(65deg);
 }
 
-.cresta-lv2:nth-of-type(6) {
+.Cassette__cresta-lv2:nth-of-type(6) {
     margin: -21px 0 0 -46px;
     transform: rotate(27deg);
 }
 
-.cresta-lv2:nth-of-type(3) {
+.Cassette__cresta-lv2:nth-of-type(3) {
     margin: 22px 0 0 46px;
     transform: rotate(27deg);
 }
 
-.cresta-lv2:nth-of-type(5) {
+.Cassette__cresta-lv2:nth-of-type(5) {
     margin: 22px 0 0 -46px;
     transform: rotate(65deg);
 }
 
-.screw {
+.Cassette__screw {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,32 +169,32 @@
     font-weight: bolder;
 }
 
-.screw::before {
+.Cassette__screw::before {
     content: '\f067';
 }
 
-.screw:nth-child(1), .screw:nth-child(2) {
+.Cassette__screw:nth-child(1), .Cassette__screw:nth-child(2) {
     top: 4px
 }
 
-.screw:nth-child(3), .screw:nth-child(4) {
+.Cassette__screw:nth-child(3), .Cassette__screw:nth-child(4) {
     bottom: 6px
 }
 
-.screw:nth-child(1), .screw:nth-child(3) {
+.Cassette__screw:nth-child(1), .Cassette__screw:nth-child(3) {
     left: 7px
 }
 
-.screw:nth-child(2), .screw:nth-child(4) {
+.Cassette__screw:nth-child(2), .Cassette__screw:nth-child(4) {
     right: 7px
 }
 
-.screw:nth-child(5) {
+.Cassette__screw:nth-child(5) {
     top: 18px;
     right: 156px;
 }
 
-.label-tape {
+.Cassette__label-tape {
     width: 99%;
     height: 78%;
     margin: -60px auto 0 auto;
@@ -197,13 +207,13 @@
     background: linear-gradient( to bottom, #ffffff 0%, #ffffff 47%, #ff5e13 47%, #ff5e13 48%, #ffffff 48%, #ffffff 55%, #ff5e13 55%, #ff5e13 57%, #ffffff 57%, #ffffff 62%, #ff5e13 62%, #ff5e13 64%, #ffffff 64%, #ffffff 69%, #ff5e13 69%, #ff5e13 74%, #ffffff 74%, #ffffff 77%, #ff5e13 77%, #ff5e13 82%, #ffffff 82%, #ffffff 85%, #ff5e13 85%, #ff5e13 93%, #ffffff 93%, #ffffff 100%);
 }
 
-.label-title {
+.Cassette__label-title {
     font-family: 'Architects Daughter', cursive;
     font-size: 50px;
     margin: -120px 0 0 0;
 }
 
-.cassette-bottom {
+.Cassette__bottom {
     width: 324px;
     height: 74px;
     margin: auto;
@@ -214,7 +224,7 @@
     z-index: 4;
 }
 
-.cassette-bottom:before {
+.Cassette__bottom:before {
     content: '';
     position: absolute;
     box-shadow: 0 -4px 0 4px #7b7b7b;
@@ -226,7 +236,7 @@
     top: 11px;
 }
 
-.orifice-square, .orifice-circle {
+.Cassette__orifice-square, .Cassette__orifice-circle {
     position: absolute;
     background-color: #ffffff;
     box-shadow: inset 0 0 0px 2px #2b2b2b;
@@ -234,28 +244,28 @@
     height: 19px;
 }
 
-.orifice-square {
+.Cassette__orifice-square {
     top: 48px;
     border-radius: 2px;
 }
 
-.orifice-square.L {
+.Cassette__orifice-square.L {
     left: 90px;
 }
 
-.orifice-square.R {
+.Cassette__orifice-square.R {
     right: 80px;
 }
 
-.orifice-circle {
+.Cassette__orifice-circle {
     top: 55px;
     border-radius: 50%;
 }
 
-.orifice-circle.L {
+.Cassette__orifice-circle.L {
     left: 42px;
 }
 
-.orifice-circle.R {
+.Cassette__orifice-circle.R {
     right: 32px;
 }
