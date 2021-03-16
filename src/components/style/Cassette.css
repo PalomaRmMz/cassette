@@ -1,6 +1,4 @@
 .Cassette__container {
-    /* border: 1px solid red; */
-    /* background-color: red; */
     width: 100%;
     height: 80%;
     display: flex;
@@ -165,28 +163,24 @@
     border-radius: 50%;
     border: 2px solid #000000;
     color: #000000;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: bolder;
 }
 
-.Cassette__screw::before {
-    content: '\f067';
-}
-
 .Cassette__screw:nth-child(1), .Cassette__screw:nth-child(2) {
-    top: 4px
+    top: 4px;
 }
 
 .Cassette__screw:nth-child(3), .Cassette__screw:nth-child(4) {
-    bottom: 6px
+    bottom: 6px;
 }
 
 .Cassette__screw:nth-child(1), .Cassette__screw:nth-child(3) {
-    left: 7px
+    left: 7px;
 }
 
 .Cassette__screw:nth-child(2), .Cassette__screw:nth-child(4) {
-    right: 7px
+    right: 7px;
 }
 
 .Cassette__screw:nth-child(5) {
@@ -211,6 +205,7 @@
     font-family: 'Architects Daughter', cursive;
     font-size: 50px;
     margin: -120px 0 0 0;
+    color: #000000;
 }
 
 .Cassette__bottom {

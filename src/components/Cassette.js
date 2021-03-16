@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../library/fontawesome";
 import "./style/Cassette.css";
 
 class Cassette extends React.Component {
@@ -6,10 +8,18 @@ class Cassette extends React.Component {
     return (
       <div className="Cassette__container">
         <div className="Cassette">
-          <div className="Cassette__screw"></div>
-          <div className="Cassette__screw"></div>
-          <div className="Cassette__screw"></div>
-          <div className="Cassette__screw"></div>
+          <div className="Cassette__screw">
+            <FontAwesomeIcon icon={["fa", "times"]} />
+          </div>
+          <div className="Cassette__screw">
+            <FontAwesomeIcon icon={["fa", "times"]} />
+          </div>
+          <div className="Cassette__screw">
+            <FontAwesomeIcon icon={["fa", "times"]} />
+          </div>
+          <div className="Cassette__screw">
+            <FontAwesomeIcon icon={["fa", "times"]} />
+          </div>
           <div className="Cassette__reels">
             <div className="Cassette__filament L" id="filamentL"></div>
             <div className="Cassette__filament R" id="filamentR"></div>
@@ -54,7 +64,9 @@ class Cassette extends React.Component {
             <div className="Cassette__orifice-square R"></div>
             <div className="Cassette__orifice-circle L"></div>
             <div className="Cassette__orifice-circle R"></div>
-            <div className="Cassette__screw"></div>
+            <div className="Cassette__screw">
+              <FontAwesomeIcon icon={["fa", "times"]} />
+            </div>
           </div>
         </div>
       </div>
