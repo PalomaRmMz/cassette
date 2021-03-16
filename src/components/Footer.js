@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../library/fontawesome";
 import "./style/Footer.css";
 
 class Footer extends React.Component {
@@ -8,9 +10,9 @@ class Footer extends React.Component {
         <p>
           Designed with <i className="fas fa-heart"></i> by{" "}
           <a className="Footer__link" href="https://github.com/PalomaRmMz">
-            Paloma RM
+            Paloma RM&nbsp;
           </a>
-          <i className="fas fa-copyright"></i>
+          <FontAwesomeIcon icon={["fa", "copyright"]} />
         </p>
       </div>
     );
