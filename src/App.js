@@ -2,6 +2,7 @@ import Cassette from "./components/Cassette";
 import Player from "./components/Player";
 import Footer from "./components/Footer";
 import Bars from "./components/Bars/Bars";
+import "./library/fontawesome";
 import "./App.css";
 
 function App() {

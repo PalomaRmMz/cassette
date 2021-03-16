@@ -1,5 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./style/Player.css";
+import "../library/fontawesome";
 
 class Player extends React.Component {
   render() {
@@ -7,22 +9,22 @@ class Player extends React.Component {
       <div className="Player__container">
         <div className="Player__speed-box" id="speed-box"></div>
         <button className="Player__btn-player" id="btn-player-undo">
-          <i className="fas fa-undo"></i>
+          <FontAwesomeIcon icon={["fa", "undo"]} />
         </button>
         <button className="Player__btn-player" id="btn-player-backward">
-          <i className="fas fa-backward"></i>
+          <FontAwesomeIcon icon={["fa", "backward"]} />
         </button>
         <button className="Player__btn-player" id="btn-player-play">
-          <i className="fas fa-play"></i>
+          <FontAwesomeIcon icon={["fa", "play"]} />
         </button>
         <button className="Player__btn-player visible" id="btn-player-pause">
-          <i className="fas fa-pause"></i>
+          <FontAwesomeIcon icon={["fa", "pause"]} />
         </button>
         <button className="Player__btn-player" id="btn-player-forward">
-          <i className="fas fa-forward"></i>
+          <FontAwesomeIcon icon={["fa", "forward"]} />
         </button>
         <button className="Player__btn-player" id="btn-player-stop">
-          <i className="fas fa-stop"></i>
+          <FontAwesomeIcon icon={["fa", "stop"]} />
         </button>
       </div>
     );
